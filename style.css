@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    /* text-align: center; */
+    background-color: #011F3F;
+}
+
+
+.heading{
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 5%;
+    color: #FEF2BF;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 800px;
+    
+    
+}
+
+.container .item{
+    height: 245px;
+    width: 270px;
+    justify-self: center;
+    align-self:center ;
+    border:10px solid black ;
+    border-radius: 15%;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+
+}
+
+#blue{
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
